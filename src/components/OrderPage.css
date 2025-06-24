@@ -1,0 +1,175 @@
+/* Main grid */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.menu-card {
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.menu-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Modal */
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto;
+}
+
+/* Modal Content Area */
+.modal-content {
+  background: white;
+  padding: 24px;
+  width: 95%;
+  max-width: 700px; /* increased from 500px */
+  max-height: 90vh; /* important for scroll */
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Image */
+.modal-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Scrollbar style (optional, for better UX) */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+.quantity-section,
+.payment-method {
+  margin: 12px 0;
+}
+
+.quantity-section input {
+  width: 60px;
+  padding: 6px;
+  margin-left: 8px;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.order-form button {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.close-modal-btn {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-confirmation {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pricing-section {
+  margin-top: 12px;
+  text-align: left;
+}
+.upi-qr-section {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.upi-qr-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+.payment-options {
+  display: flex;
+  flex-direction: row; /* ← display radio buttons inline */
+  gap: 20px;           /* ← spacing between options */
+  margin: 10px 0;
+  align-items: center;
+  flex-wrap: wrap;     /* makes it responsive */
+}
+
+.payment-options label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
