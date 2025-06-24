@@ -55,7 +55,7 @@ const RegisterPage: React.FC = () => {
     e.preventDefault();
     if (!validateForm()) return;
     try {
-      await axios.post('http://localhost:5000/api/register', formData);
+     await axios.post('/api/register', formData); 
       toast.success('Submitted successfully!');
       setTimeout(() => navigate('/login'), 2000); // Redirect after 2 seconds
     } catch (error: any) {
